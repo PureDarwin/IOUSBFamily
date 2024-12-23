@@ -3442,7 +3442,7 @@
 		3E99F073152B66F900F97A0C /* Deployment */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
+				ARCHS = "$(ARCHS_STANDARD)";
 				COPY_PHASE_STRIP = YES;
 				FRAMEWORK_SEARCH_PATHS = "";
 				GCC_OPTIMIZATION_LEVEL = s;
@@ -3461,6 +3461,7 @@
 				OTHER_LDFLAGS = "";
 				OTHER_REZFLAGS = "";
 				PRODUCT_NAME = IOUSBLib;
+				SDKROOT = macosx;
 				SECTORDER_FLAGS = "";
 				WARNING_CFLAGS = (
 					"-Wmost",
@@ -3475,7 +3476,7 @@
 		3E99F074152B66F900F97A0C /* Logging */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
+				ARCHS = "$(ARCHS_STANDARD)";
 				COPY_PHASE_STRIP = NO;
 				FRAMEWORK_SEARCH_PATHS = "";
 				GCC_DYNAMIC_NO_PIC = NO;
@@ -3496,6 +3497,7 @@
 				OTHER_LDFLAGS = "";
 				OTHER_REZFLAGS = "";
 				PRODUCT_NAME = IOUSBLib;
+				SDKROOT = macosx;
 				SECTORDER_FLAGS = "";
 				WARNING_CFLAGS = (
 					"-Wmost",
@@ -3510,7 +3512,7 @@
 		3E99F075152B66F900F97A0C /* kprintf */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
+				ARCHS = "$(ARCHS_STANDARD)";
 				COPY_PHASE_STRIP = NO;
 				FRAMEWORK_SEARCH_PATHS = "";
 				GCC_OPTIMIZATION_LEVEL = s;
@@ -3529,6 +3531,7 @@
 				OTHER_LDFLAGS = "";
 				OTHER_REZFLAGS = "";
 				PRODUCT_NAME = IOUSBLib;
+				SDKROOT = macosx;
 				SECTORDER_FLAGS = "";
 				WARNING_CFLAGS = (
 					"-Wmost",
@@ -3625,6 +3628,7 @@
 		3E99F0E1152B6C4200F97A0C /* Deployment */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ADDITIONAL_SDKS = MacOSX10.15;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Deployment;
@@ -3632,6 +3636,7 @@
 		3E99F0E2152B6C4200F97A0C /* Logging */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ADDITIONAL_SDKS = MacOSX10.15;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Logging;
@@ -3639,6 +3644,7 @@
 		3E99F0E3152B6C4200F97A0C /* kprintf */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ADDITIONAL_SDKS = MacOSX10.15;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = kprintf;
@@ -3688,21 +3694,27 @@
 		3E99F0FD152B6F6200F97A0C /* Deployment */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ADDITIONAL_SDKS = MacOSX10.15;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = "";
 			};
 			name = Deployment;
 		};
 		3E99F0FE152B6F6200F97A0C /* Logging */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ADDITIONAL_SDKS = MacOSX10.15;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = "";
 			};
 			name = Logging;
 		};
 		3E99F0FF152B6F6200F97A0C /* kprintf */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ADDITIONAL_SDKS = MacOSX10.15;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = "";
 			};
 			name = kprintf;
 		};
@@ -3730,6 +3742,7 @@
 		3EAF89FE0B5D42860029974F /* Logging */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ADDITIONAL_SDKS = MacOSX10.15;
 				COPY_PHASE_STRIP = YES;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
@@ -3768,6 +3781,7 @@
 		3EAF89FF0B5D42860029974F /* Deployment */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ADDITIONAL_SDKS = MacOSX10.15;
 				COPY_PHASE_STRIP = YES;
 				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
 				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
@@ -3805,6 +3819,7 @@
 		3EAF8A000B5D42860029974F /* kprintf */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ADDITIONAL_SDKS = MacOSX10.15;
 				COPY_PHASE_STRIP = NO;
 				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
 				GCC_PREPROCESSOR_DEFINITIONS = (
@@ -3860,6 +3875,7 @@
 				OTHER_REZFLAGS = "";
 				PRODUCT_NAME = installhdrs;
 				REZ_EXECUTABLE = YES;
+				SDKROOT = "";
 				SECTORDER_FLAGS = "";
 				WARNING_CFLAGS = (
 					"-Wmost",
@@ -3873,6 +3889,8 @@
 		3EAF8A260B5D42860029974F /* Deployment */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ADDITIONAL_SDKS = MacOSX10.15.sdk;
+				"ADDITIONAL_SDKS[arch=*]" = "";
 				ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
 				COPY_PHASE_STRIP = YES;
 				GCC_OPTIMIZATION_LEVEL = s;
@@ -3884,6 +3902,7 @@
 				OTHER_REZFLAGS = "";
 				PRODUCT_NAME = installhdrs;
 				REZ_EXECUTABLE = YES;
+				SDKROOT = "";
 				SECTORDER_FLAGS = "";
 				WARNING_CFLAGS = (
 					"-Wmost",
@@ -3908,6 +3927,7 @@
 				OTHER_REZFLAGS = "";
 				PRODUCT_NAME = installhdrs;
 				REZ_EXECUTABLE = YES;
+				SDKROOT = "";
 				SECTORDER_FLAGS = "";
 				WARNING_CFLAGS = (
 					"-Wmost",
@@ -4830,6 +4850,7 @@
 		3EAF8AD20B5D42870029974F /* Logging */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ADDITIONAL_SDKS = MacOSX10.15;
 				COPY_PHASE_STRIP = YES;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
@@ -4869,6 +4890,7 @@
 		3EAF8AD30B5D42870029974F /* Deployment */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ADDITIONAL_SDKS = MacOSX10.15;
 				COPY_PHASE_STRIP = YES;
 				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
 				GCC_OPTIMIZATION_LEVEL = s;
@@ -4907,6 +4929,7 @@
 		3EAF8AD40B5D42870029974F /* kprintf */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ADDITIONAL_SDKS = MacOSX10.15;
 				COPY_PHASE_STRIP = NO;
 				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
 				GCC_OPTIMIZATION_LEVEL = s;
